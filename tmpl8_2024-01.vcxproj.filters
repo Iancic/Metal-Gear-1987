@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="game.cpp" />
     <ClCompile Include="template\opencl.cpp">
       <Filter>template</Filter>
     </ClCompile>
@@ -23,90 +22,39 @@
     <ClCompile Include="template\scene.cpp">
       <Filter>template</Filter>
     </ClCompile>
-    <ClCompile Include="Map.cpp">
-      <Filter>Map</Filter>
-    </ClCompile>
-    <ClCompile Include="BoundingBox.cpp">
-      <Filter>Map</Filter>
-    </ClCompile>
-    <ClCompile Include="Actor.cpp">
-      <Filter>Actors</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy.cpp">
-      <Filter>Actors</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Actors</Filter>
-    </ClCompile>
-    <ClCompile Include="IntroManager.cpp">
-      <Filter>Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="MapManager.cpp">
-      <Filter>Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="Bullet.cpp">
-      <Filter>Particles</Filter>
-    </ClCompile>
-    <ClCompile Include="Text.cpp">
-      <Filter>UI</Filter>
-    </ClCompile>
-    <ClCompile Include="Container.cpp">
-      <Filter>UI</Filter>
-    </ClCompile>
-    <ClCompile Include="UIManager.cpp">
-      <Filter>Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="Item.cpp">
-      <Filter>Items</Filter>
-    </ClCompile>
-    <ClCompile Include="Binoculars.cpp">
-      <Filter>Items</Filter>
-    </ClCompile>
-    <ClCompile Include="Ration.cpp">
-      <Filter>Items</Filter>
-    </ClCompile>
-    <ClCompile Include="Gun.cpp">
-      <Filter>Items</Filter>
-    </ClCompile>
-    <ClCompile Include="GasMask.cpp">
-      <Filter>Items</Filter>
-    </ClCompile>
-    <ClCompile Include="Cigar.cpp">
-      <Filter>Items</Filter>
-    </ClCompile>
-    <ClCompile Include="AccesCard.cpp">
-      <Filter>Items</Filter>
-    </ClCompile>
-    <ClCompile Include="Queue.cpp" />
-    <ClCompile Include="Mine.cpp">
-      <Filter>Items</Filter>
-    </ClCompile>
-    <ClCompile Include="Inventory.cpp">
-      <Filter>Items</Filter>
-    </ClCompile>
-    <ClCompile Include="Door.cpp">
-      <Filter>Map</Filter>
-    </ClCompile>
-    <ClCompile Include="ElevatorDoor.cpp">
-      <Filter>Map</Filter>
-    </ClCompile>
-    <ClCompile Include="RoomDoor.cpp">
-      <Filter>Map</Filter>
-    </ClCompile>
-    <ClCompile Include="RedGuard.cpp">
-      <Filter>Actors</Filter>
-    </ClCompile>
-    <ClCompile Include="GasGuard.cpp">
-      <Filter>Actors</Filter>
-    </ClCompile>
-    <ClCompile Include="Placeable.cpp">
-      <Filter>Items</Filter>
-    </ClCompile>
-    <ClCompile Include="MovingBox.cpp" />
-    <ClCompile Include="Elevator.cpp" />
+    <ClCompile Include="source\AccesCard.cpp" />
+    <ClCompile Include="source\Actor.cpp" />
+    <ClCompile Include="source\ActorPool.cpp" />
+    <ClCompile Include="source\Binoculars.cpp" />
+    <ClCompile Include="source\BoundingBox.cpp" />
+    <ClCompile Include="source\Bullet.cpp" />
+    <ClCompile Include="source\Cigar.cpp" />
+    <ClCompile Include="source\Container.cpp" />
+    <ClCompile Include="source\Door.cpp" />
+    <ClCompile Include="source\Elevator.cpp" />
+    <ClCompile Include="source\ElevatorDoor.cpp" />
+    <ClCompile Include="source\Enemy.cpp" />
+    <ClCompile Include="source\game.cpp" />
+    <ClCompile Include="source\GasGuard.cpp" />
+    <ClCompile Include="source\GasMask.cpp" />
+    <ClCompile Include="source\Gun.cpp" />
+    <ClCompile Include="source\IntroManager.cpp" />
+    <ClCompile Include="source\Inventory.cpp" />
+    <ClCompile Include="source\Item.cpp" />
+    <ClCompile Include="source\Map.cpp" />
+    <ClCompile Include="source\MapManager.cpp" />
+    <ClCompile Include="source\Mine.cpp" />
+    <ClCompile Include="source\MovingBox.cpp" />
+    <ClCompile Include="source\Placeable.cpp" />
+    <ClCompile Include="source\Player.cpp" />
+    <ClCompile Include="source\Queue.cpp" />
+    <ClCompile Include="source\Ration.cpp" />
+    <ClCompile Include="source\RedGuard.cpp" />
+    <ClCompile Include="source\RoomDoor.cpp" />
+    <ClCompile Include="source\Text.cpp" />
+    <ClCompile Include="source\UIManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="game.h" />
     <ClInclude Include="template\common.h">
       <Filter>template</Filter>
     </ClInclude>
@@ -134,92 +82,39 @@
     <ClInclude Include="template\scene.h">
       <Filter>template</Filter>
     </ClInclude>
-    <ClInclude Include="Map.h">
-      <Filter>Map</Filter>
-    </ClInclude>
-    <ClInclude Include="BoundingBox.h">
-      <Filter>Map</Filter>
-    </ClInclude>
-    <ClInclude Include="Actor.h">
-      <Filter>Actors</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>Actors</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Actors</Filter>
-    </ClInclude>
-    <ClInclude Include="IntroManager.h">
-      <Filter>Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="MapManager.h">
-      <Filter>Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="Bullet.h">
-      <Filter>Particles</Filter>
-    </ClInclude>
-    <ClInclude Include="Text.h">
-      <Filter>UI</Filter>
-    </ClInclude>
-    <ClInclude Include="Container.h">
-      <Filter>UI</Filter>
-    </ClInclude>
-    <ClInclude Include="UIManager.h">
-      <Filter>Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="Item.h">
-      <Filter>Items</Filter>
-    </ClInclude>
-    <ClInclude Include="Binoculars.h">
-      <Filter>Items</Filter>
-    </ClInclude>
-    <ClInclude Include="Ration.h">
-      <Filter>Items</Filter>
-    </ClInclude>
-    <ClInclude Include="Gun.h">
-      <Filter>Items</Filter>
-    </ClInclude>
-    <ClInclude Include="GasMask.h">
-      <Filter>Items</Filter>
-    </ClInclude>
-    <ClInclude Include="Cigar.h">
-      <Filter>Items</Filter>
-    </ClInclude>
-    <ClInclude Include="AccesCard.h">
-      <Filter>Items</Filter>
-    </ClInclude>
-    <ClInclude Include="Queue.h" />
-    <ClInclude Include="Mine.h">
-      <Filter>Items</Filter>
-    </ClInclude>
-    <ClInclude Include="Inventory.h">
-      <Filter>Items</Filter>
-    </ClInclude>
-    <ClInclude Include="Door.h">
-      <Filter>Map</Filter>
-    </ClInclude>
-    <ClInclude Include="ElevatorDoor.h">
-      <Filter>Map</Filter>
-    </ClInclude>
-    <ClInclude Include="RoomDoor.h">
-      <Filter>Map</Filter>
-    </ClInclude>
-    <ClInclude Include="RedGuard.h">
-      <Filter>Actors</Filter>
-    </ClInclude>
-    <ClInclude Include="GasGuard.h">
-      <Filter>Actors</Filter>
-    </ClInclude>
-    <ClInclude Include="Placeable.h">
-      <Filter>Items</Filter>
-    </ClInclude>
-    <ClInclude Include="MovingBox.h" />
-    <ClInclude Include="Elevator.h" />
+    <ClInclude Include="headers\UIManager.h" />
+    <ClInclude Include="headers\AccesCard.h" />
+    <ClInclude Include="headers\Actor.h" />
+    <ClInclude Include="headers\ActorPool.h" />
+    <ClInclude Include="headers\Binoculars.h" />
+    <ClInclude Include="headers\BoundingBox.h" />
+    <ClInclude Include="headers\Bullet.h" />
+    <ClInclude Include="headers\Cigar.h" />
+    <ClInclude Include="headers\Container.h" />
+    <ClInclude Include="headers\Door.h" />
+    <ClInclude Include="headers\Elevator.h" />
+    <ClInclude Include="headers\ElevatorDoor.h" />
+    <ClInclude Include="headers\Enemy.h" />
+    <ClInclude Include="headers\game.h" />
+    <ClInclude Include="headers\GasGuard.h" />
+    <ClInclude Include="headers\GasMask.h" />
+    <ClInclude Include="headers\Gun.h" />
+    <ClInclude Include="headers\IntroManager.h" />
+    <ClInclude Include="headers\Inventory.h" />
+    <ClInclude Include="headers\Item.h" />
+    <ClInclude Include="headers\Map.h" />
+    <ClInclude Include="headers\MapManager.h" />
+    <ClInclude Include="headers\Mine.h" />
+    <ClInclude Include="headers\MovingBox.h" />
+    <ClInclude Include="headers\Placeable.h" />
+    <ClInclude Include="headers\Player.h" />
+    <ClInclude Include="headers\Queue.h" />
+    <ClInclude Include="headers\Ration.h" />
+    <ClInclude Include="headers\RedGuard.h" />
+    <ClInclude Include="headers\RoomDoor.h" />
+    <ClInclude Include="headers\Text.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md">
-      <Filter>template</Filter>
-    </None>
     <None Include="cl\kernels.cl">
       <Filter>kernels</Filter>
     </None>

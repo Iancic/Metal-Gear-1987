@@ -47,7 +47,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>template;.;lib\glad;lib\glfw\include;lib\OpenCL\inc;lib\zlib;lib;$(SolutionDir)audio\inc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>template;.;lib\glad;lib\glfw\include;lib\OpenCL\inc;lib\zlib;lib;$(SolutionDir)audio\inc;$(SolutionDir)headers</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>precomp.h</PrecompiledHeaderFile>
       <WarningLevel>Level4</WarningLevel>
@@ -121,34 +121,37 @@
   </ItemDefinitionGroup>
   <!-- END Custom section -->
   <ItemGroup>
-    <ClCompile Include="AccesCard.cpp" />
-    <ClCompile Include="Actor.cpp" />
-    <ClCompile Include="Binoculars.cpp" />
-    <ClCompile Include="BoundingBox.cpp" />
-    <ClCompile Include="Bullet.cpp" />
-    <ClCompile Include="Cigar.cpp" />
-    <ClCompile Include="Container.cpp" />
-    <ClCompile Include="Door.cpp" />
-    <ClCompile Include="Elevator.cpp" />
-    <ClCompile Include="ElevatorDoor.cpp" />
-    <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="game.cpp" />
-    <ClCompile Include="GasGuard.cpp" />
-    <ClCompile Include="GasMask.cpp" />
-    <ClCompile Include="Gun.cpp" />
-    <ClCompile Include="IntroManager.cpp" />
-    <ClCompile Include="Inventory.cpp" />
-    <ClCompile Include="Item.cpp" />
-    <ClCompile Include="Map.cpp" />
-    <ClCompile Include="MapManager.cpp" />
-    <ClCompile Include="Mine.cpp" />
-    <ClCompile Include="MovingBox.cpp" />
-    <ClCompile Include="Placeable.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Queue.cpp" />
-    <ClCompile Include="Ration.cpp" />
-    <ClCompile Include="RedGuard.cpp" />
-    <ClCompile Include="RoomDoor.cpp" />
+    <ClCompile Include="source\AccesCard.cpp" />
+    <ClCompile Include="source\Actor.cpp" />
+    <ClCompile Include="source\ActorPool.cpp" />
+    <ClCompile Include="source\Binoculars.cpp" />
+    <ClCompile Include="source\BoundingBox.cpp" />
+    <ClCompile Include="source\Bullet.cpp" />
+    <ClCompile Include="source\Cigar.cpp" />
+    <ClCompile Include="source\Container.cpp" />
+    <ClCompile Include="source\Door.cpp" />
+    <ClCompile Include="source\Elevator.cpp" />
+    <ClCompile Include="source\ElevatorDoor.cpp" />
+    <ClCompile Include="source\Enemy.cpp" />
+    <ClCompile Include="source\game.cpp" />
+    <ClCompile Include="source\GasGuard.cpp" />
+    <ClCompile Include="source\GasMask.cpp" />
+    <ClCompile Include="source\Gun.cpp" />
+    <ClCompile Include="source\IntroManager.cpp" />
+    <ClCompile Include="source\Inventory.cpp" />
+    <ClCompile Include="source\Item.cpp" />
+    <ClCompile Include="source\Map.cpp" />
+    <ClCompile Include="source\MapManager.cpp" />
+    <ClCompile Include="source\Mine.cpp" />
+    <ClCompile Include="source\MovingBox.cpp" />
+    <ClCompile Include="source\Placeable.cpp" />
+    <ClCompile Include="source\Player.cpp" />
+    <ClCompile Include="source\Queue.cpp" />
+    <ClCompile Include="source\Ration.cpp" />
+    <ClCompile Include="source\RedGuard.cpp" />
+    <ClCompile Include="source\RoomDoor.cpp" />
+    <ClCompile Include="source\Text.cpp" />
+    <ClCompile Include="source\UIManager.cpp" />
     <ClCompile Include="template\opencl.cpp" />
     <ClCompile Include="template\opengl.cpp" />
     <ClCompile Include="template\scene.cpp">
@@ -164,39 +167,40 @@
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">precomp.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="template\tmpl8math.cpp" />
-    <ClCompile Include="Text.cpp" />
-    <ClCompile Include="UIManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AccesCard.h" />
-    <ClInclude Include="Actor.h" />
-    <ClInclude Include="Binoculars.h" />
-    <ClInclude Include="BoundingBox.h" />
-    <ClInclude Include="Bullet.h" />
-    <ClInclude Include="Cigar.h" />
     <ClInclude Include="cl\tools.cl" />
-    <ClInclude Include="Container.h" />
-    <ClInclude Include="Door.h" />
-    <ClInclude Include="Elevator.h" />
-    <ClInclude Include="ElevatorDoor.h" />
-    <ClInclude Include="Enemy.h" />
-    <ClInclude Include="game.h" />
-    <ClInclude Include="GasGuard.h" />
-    <ClInclude Include="GasMask.h" />
-    <ClInclude Include="Gun.h" />
-    <ClInclude Include="IntroManager.h" />
-    <ClInclude Include="Inventory.h" />
-    <ClInclude Include="Item.h" />
-    <ClInclude Include="Map.h" />
-    <ClInclude Include="MapManager.h" />
-    <ClInclude Include="Mine.h" />
-    <ClInclude Include="MovingBox.h" />
-    <ClInclude Include="Placeable.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="Queue.h" />
-    <ClInclude Include="Ration.h" />
-    <ClInclude Include="RedGuard.h" />
-    <ClInclude Include="RoomDoor.h" />
+    <ClInclude Include="headers\AccesCard.h" />
+    <ClInclude Include="headers\Actor.h" />
+    <ClInclude Include="headers\ActorPool.h" />
+    <ClInclude Include="headers\Binoculars.h" />
+    <ClInclude Include="headers\BoundingBox.h" />
+    <ClInclude Include="headers\Bullet.h" />
+    <ClInclude Include="headers\Cigar.h" />
+    <ClInclude Include="headers\Container.h" />
+    <ClInclude Include="headers\Door.h" />
+    <ClInclude Include="headers\Elevator.h" />
+    <ClInclude Include="headers\ElevatorDoor.h" />
+    <ClInclude Include="headers\Enemy.h" />
+    <ClInclude Include="headers\game.h" />
+    <ClInclude Include="headers\GasGuard.h" />
+    <ClInclude Include="headers\GasMask.h" />
+    <ClInclude Include="headers\Gun.h" />
+    <ClInclude Include="headers\IntroManager.h" />
+    <ClInclude Include="headers\Inventory.h" />
+    <ClInclude Include="headers\Item.h" />
+    <ClInclude Include="headers\Map.h" />
+    <ClInclude Include="headers\MapManager.h" />
+    <ClInclude Include="headers\Mine.h" />
+    <ClInclude Include="headers\MovingBox.h" />
+    <ClInclude Include="headers\Placeable.h" />
+    <ClInclude Include="headers\Player.h" />
+    <ClInclude Include="headers\Queue.h" />
+    <ClInclude Include="headers\Ration.h" />
+    <ClInclude Include="headers\RedGuard.h" />
+    <ClInclude Include="headers\RoomDoor.h" />
+    <ClInclude Include="headers\Text.h" />
+    <ClInclude Include="headers\UIManager.h" />
     <ClInclude Include="template\common.h" />
     <ClInclude Include="template\opencl.h" />
     <ClInclude Include="template\opengl.h" />
@@ -205,12 +209,9 @@
     <ClInclude Include="template\sprite.h" />
     <ClInclude Include="template\surface.h" />
     <ClInclude Include="template\tmpl8math.h" />
-    <ClInclude Include="Text.h" />
-    <ClInclude Include="UIManager.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="cl\kernels.cl" />
-    <None Include="README.md" />
     <None Include="template\LICENSE" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
